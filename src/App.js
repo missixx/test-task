@@ -3,6 +3,7 @@ import './Styles/app.css';
 
 import Header from './Header.js'
 import Content from './Content.js'
+import RouterComponent from './RouterComponent';
 
 
 export default function App(props) {
@@ -13,8 +14,7 @@ export default function App(props) {
     <div className="app">
       <div className='container'>
         <Header />
-        <Content />
-
+        <RouterComponent/>
       </div>
     </div>
   );

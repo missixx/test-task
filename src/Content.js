@@ -4,13 +4,17 @@ import './Styles/content.css';
 
 
 import Item from './Item.js'
+import FiltersBar from "./FiltersBar";
 
 function Content(props) {
 
    const mapedItems = props.items.map((item) => <Item key={item.id} item={item} />)
 
    return (
-      <div className='items-container'> { mapedItems}</div>
+      <div>
+         <FiltersBar />
+         <div className='items-container'> {mapedItems}</div>
+      </div>
    )
 }
 

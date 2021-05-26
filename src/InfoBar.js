@@ -1,5 +1,6 @@
 import React from 'react';
 import { connect } from 'react-redux'
+import { Link } from 'react-router-dom';
 import './Styles/infoBar.css'
 
 
@@ -15,17 +16,17 @@ function InfoBar(props) {
       <div className='infoBar'>
          <div className='infoBar__inner'>
          <div className='logo'>
-            <div className='logo__img'></div>
+            <Link to='/'><div className='logo__img'></div></Link>
          </div>
          <div className='info'>
             <div className='info__item'>
-               <div className='info__name'><a href="www.google.ru">SHOP</a></div>
+               <div className='info__name'><Link to='/'>SHOP</Link></div>
             </div>
             <div className='info__item'>
-               <div className='info__name' ><a href="www.google.ru">OUR STORY</a></div>
+               <div className='info__name' ><Link to='/ourstory'>OUR STORY</Link></div>
             </div>
             <div className='info__item'>
-               <div className='info__name'><a href="www.google.ru">CONTACT</a></div>
+               <div className='info__name'><Link to='/contacts'>CONTACT</Link></div>
             </div>
          </div>
          <div className='searching'>
