@@ -1,13 +1,36 @@
+
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
+
+import { combineReducers, createStore } from 'redux';
+import { Provider } from 'react-redux';
+
+import './Styles/index.css';
+
+import App from './App.js';
+
 import reportWebVitals from './reportWebVitals';
 
+import itemsReducer from './Reducers/ItemsReducer.js'
+import inputReducer from './Reducers/InputReducer.js'
+import selectByCategoryReducer from './Reducers/SelectByCategoryReducer.js'
+import selectSortReducer from './Reducers/SelectSortReducer.js'
+
+
+const rootReducer = combineReducers({
+  items: itemsReducer,
+  searchInputValue: inputReducer,
+  selectedByCategoryValue: selectByCategoryReducer,
+  selectSortValue: selectSortReducer
+})
+
+const store = createStore(rootReducer)
+
+
 ReactDOM.render(
-  <React.StrictMode>
+  <Provider store={store}>
     <App />
-  </React.StrictMode>,
+  </Provider>,
   document.getElementById('root')
 );
 

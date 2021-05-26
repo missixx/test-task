@@ -1,0 +1,44 @@
+.item {
+   width: 180px;
+   height: 360px;
+   margin: 30px 5px;
+}
+
+.item__img {
+   width: 180px;
+   height: 280px;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.item-name {
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 700;
+   margin-bottom: 10px;
+}
+
+.item-description {
+   font-family: Arial, Helvetica, sans-serif;
+   margin-bottom: 10px;
+}
+
+.buy-btn {
+   position: relative;
+   color: white;
+   width: 100%;
+   background-color: #3f4246;
+   padding: 15px;
+   border-radius: 10px;
+}
+
+.buy-btn::after {
+ background-image: url('../Img/btn-busket.png');
+ background-repeat: no-repeat;
+ position: absolute;
+ top: 10px;
+ right: 30px;
+ content: '';
+ display: inline-block;
+ width: 19px;
+ height: 22px;
+}

@@ -1,0 +1,79 @@
+.filters-bar {
+   position: relative;
+   height: 70px;
+   padding-top: 20px;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   color: #545454;
+
+}
+
+.filters-bar__inner {
+   display: flex;
+}
+
+.shopAll {
+   position: relative;
+   width: 187px;
+}
+
+.shopAll__name {
+   position: absolute;
+   top: 50%;
+   margin-top: -0.625em;
+   font-size: 30px;
+}
+
+.items {
+   position: relative;
+   width: 157px;
+}
+
+.items__name {
+   position: absolute;
+   top: 50%;
+   margin-top: -0.625em;
+}
+
+.filters {
+   display: flex;
+   justify-content: space-between;
+   width: 405px;
+   
+}
+
+.filters__category {
+   position: relative;
+   display: flex;
+   justify-content: flex-end;
+   width: 190px;
+   
+}
+
+.filters__sortBy {
+   position: relative;
+   display: flex;
+   justify-content: flex-end;
+   width: 190px;
+}
+
+.filters__name {
+   width: 70px;
+   position: absolute;
+   top: 50%;
+   margin-top: -0.625em;
+   left: 0;
+}
+
+.filters__button {
+   width: 100px;
+   height: 50px;
+   right: 0;
+   border-radius: 10px;
+   outline: none;
+   font-family: Arial, Helvetica, sans-serif;
+   font-weight: 600;
+   text-align-last: center;
+   
+   
+}

@@ -1,0 +1,105 @@
+.infoBar {
+   height: 50px;
+   padding-top: 20px;
+   color: gray;
+   font-family: "Roboto", sans-serif;
+   font-weight: bold;
+   color: #878787;
+   font-size: 11px;
+}
+
+.infoBar__inner {
+   display: flex;
+}
+
+.logo {
+   width: 300px;
+}
+
+.logo__img {
+   width: 111px;
+   height: 24px;
+   background-image: url("../Img/logo.png");
+}
+
+.info {
+   width: 265px;
+   display: flex;
+   justify-content: space-between;
+}
+
+.info__item {
+}
+
+.info__name {
+   padding-top: 5px;
+}
+
+.info__name a {
+}
+
+.searching {
+   position: relative;
+   width: 160px;
+}
+
+.searching__input {
+   width: 100%;
+   height: 100%;
+   background-image: url("../Img/searching.png");
+   background-repeat: no-repeat;
+   background-position: right;
+   padding: 5px 25px 5px 5px;
+   border: none;
+   outline: none;
+}
+
+.searching__input:focus {
+   background-image: none;
+   border-bottom: 1px solid gray;
+   animation-name: opacity;
+   animation-duration: 1s;
+}
+
+@keyframes opacity {
+   0% {
+      opacity: 0;
+   }
+   100% {
+      opacity: 1;
+   }
+}
+
+.searching__input::-webkit-search-cancel-button {
+   display: none;
+}
+
+.login {
+   width: 70px;
+}
+
+.login__btn {
+   text-align: center;
+   padding-top: 5px;
+}
+
+.busket {
+   position: relative;
+   width: 30px;
+}
+
+.busket__img {
+   width: 25px;
+   height: 25px;
+   background-image: url("../Img/busket.png");
+}
+
+.busket__counter {
+   position: absolute;
+   width: 10px;
+   height: 10px;
+   right: -5px;
+   top: -5px;
+   border-radius: 50%;
+   background-color: black;
+}
