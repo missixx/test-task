@@ -7,10 +7,7 @@ import { Provider } from 'react-redux';
 
 // import { Router, Route, Switch } from "react-router";
 import {
-  BrowserRouter as Router,
-  Switch,
-  Route,
-  Link
+  BrowserRouter as Router
 } from "react-router-dom";
 
 import './Styles/index.css';
