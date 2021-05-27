@@ -37,8 +37,8 @@ function InfoBar(props) {
             <div className='login__btn'>Login</div>
          </div>
          <div className='busket'>
-            <div className='busket__img'></div>
-            <div className='busket__counter'></div>
+         <Link to='/busket'> <div className='busket__img'></div></Link>
+            <div className='busket__counter'>{props.state.busketItems.length}</div>
          </div>
          </div>
       </div>

@@ -1,0 +1,26 @@
+.busket-item-block {
+   display: flex;
+   justify-content: space-between;
+}
+
+.busket-item__img {
+   width: 75px;
+   height: 75px;
+   background-repeat: no-repeat;
+   background-size: contain;
+}
+
+.busket-item__info {
+}
+
+.busket-item__name {
+}
+
+.busket-item__descr {
+}
+
+.busket-item__calc-block {
+}
+
+.busket-item__price {
+}

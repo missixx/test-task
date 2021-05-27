@@ -20,13 +20,15 @@ import itemsReducer from './Reducers/ItemsReducer.js'
 import inputReducer from './Reducers/InputReducer.js'
 import selectByCategoryReducer from './Reducers/SelectByCategoryReducer.js'
 import selectSortReducer from './Reducers/SelectSortReducer.js'
+import busketReducer from './Reducers/busketReducer.js'
 
 
 const rootReducer = combineReducers({
   items: itemsReducer,
   searchInputValue: inputReducer,
   selectedByCategoryValue: selectByCategoryReducer,
-  selectSortValue: selectSortReducer
+  selectSortValue: selectSortReducer,
+  busketItems: busketReducer
 })
 
 const store = createStore(rootReducer)
