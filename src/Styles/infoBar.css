@@ -105,3 +105,7 @@
    color: white;
    text-align: center;
 }
+
+.busket__counter--none{
+display: none;
+}
