@@ -11,6 +11,7 @@
 }
 
 .busket-item__info {
+   width: 200px;
 }
 
 .busket-item__name {
@@ -21,7 +22,29 @@
 
 .busket-item__calc-block {
    border: 1px solid gray;
+   width: 50px;
+   height: 30px;
+   display: flex;
+   justify-content: space-between;
+   cursor: pointer;
+}
+
+.busket-item__minus{
+  
+   }
+
+
+.busket-item__plus{
+
+}
+
+.busket-item__count{
+   width: 30px;
 }
 
 .busket-item__price {
+}
+
+.busket-item__result{
+   width: 120px;
 }

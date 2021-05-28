@@ -26,17 +26,17 @@ function BusketItem(props) {
                <div className='busket-item__descr'>{props.item.description}</div>
             </div>
             <div className='busket-item__calc-block'>
-               <span onClick={handleItemCountDecrem}>-</span>
-               <span>1</span>
-               <span onClick={handleItemCountIncrem}>+</span>
-            </div>
-            <div className='busket-item__count'>
+               <span onClick={handleItemCountDecrem} className='busket-item__minus'>-</span>
                <span>{props.item.itemsCount}</span>
+               <span onClick={handleItemCountIncrem} className='busket-item__plus'>+</span>
             </div>
-            <span>X</span>
-            <div className='busket-item__price'>{props.item.price}</div>
+            {/* <div className='busket-item__count'>
+               <span>{}</span>
+            </div> */}
+            <span>x</span>
+            <div className='busket-item__price'>{props.item.price}$</div>
             <div className='busket-item__result'>
-               <span>{props.item.itemsCount * props.item.price}</span>
+               <span>amount: {props.item.itemsCount * props.item.price}$</span>
             </div>
             <div className='busket-item__delete'>
                <span onClick={handleAddToBusket}>X</span>
