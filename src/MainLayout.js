@@ -4,6 +4,7 @@ import Contacts from "./Contacts";
 import Content from "./Content";
 import OurStory from "./OurStory";
 import Busket from './Busket';
+import PageNotFound from './PageNotFound';
 
 export default function MainLayout() {
    return (
@@ -13,6 +14,7 @@ export default function MainLayout() {
             <Route path='/ourstory'><OurStory /></Route>
             <Route path='/contacts'><Contacts /></Route>
             <Route path='/busket'><Busket /></Route>
+            <Route><PageNotFound /></Route>
          </Switch>
       </div>
    )
