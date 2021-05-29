@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/test-task/static/css/main.513a33c5.chunk.css",
-    "main.js": "/test-task/static/js/main.c8603609.chunk.js",
-    "main.js.map": "/test-task/static/js/main.c8603609.chunk.js.map",
-    "runtime-main.js": "/test-task/static/js/runtime-main.0e062563.js",
-    "runtime-main.js.map": "/test-task/static/js/runtime-main.0e062563.js.map",
-    "static/js/2.44d96eb3.chunk.js": "/test-task/static/js/2.44d96eb3.chunk.js",
-    "static/js/2.44d96eb3.chunk.js.map": "/test-task/static/js/2.44d96eb3.chunk.js.map",
-    "static/js/3.bf2fe8c0.chunk.js": "/test-task/static/js/3.bf2fe8c0.chunk.js",
-    "static/js/3.bf2fe8c0.chunk.js.map": "/test-task/static/js/3.bf2fe8c0.chunk.js.map",
-    "index.html": "/test-task/index.html",
-    "static/css/main.513a33c5.chunk.css.map": "/test-task/static/css/main.513a33c5.chunk.css.map",
-    "static/js/2.44d96eb3.chunk.js.LICENSE.txt": "/test-task/static/js/2.44d96eb3.chunk.js.LICENSE.txt",
-    "static/media/item.css": "/test-task/static/media/btn-busket.85b87c10.png",
-    "static/media/infoBar.css": "/test-task/static/media/searching.e34c764b.png"
+    "main.css": "/test-taskr/static/css/main.a8a6cfca.chunk.css",
+    "main.js": "/test-taskr/static/js/main.c8603609.chunk.js",
+    "main.js.map": "/test-taskr/static/js/main.c8603609.chunk.js.map",
+    "runtime-main.js": "/test-taskr/static/js/runtime-main.ec643acd.js",
+    "runtime-main.js.map": "/test-taskr/static/js/runtime-main.ec643acd.js.map",
+    "static/js/2.44d96eb3.chunk.js": "/test-taskr/static/js/2.44d96eb3.chunk.js",
+    "static/js/2.44d96eb3.chunk.js.map": "/test-taskr/static/js/2.44d96eb3.chunk.js.map",
+    "static/js/3.bf2fe8c0.chunk.js": "/test-taskr/static/js/3.bf2fe8c0.chunk.js",
+    "static/js/3.bf2fe8c0.chunk.js.map": "/test-taskr/static/js/3.bf2fe8c0.chunk.js.map",
+    "index.html": "/test-taskr/index.html",
+    "static/css/main.a8a6cfca.chunk.css.map": "/test-taskr/static/css/main.a8a6cfca.chunk.css.map",
+    "static/js/2.44d96eb3.chunk.js.LICENSE.txt": "/test-taskr/static/js/2.44d96eb3.chunk.js.LICENSE.txt",
+    "static/media/item.css": "/test-taskr/static/media/btn-busket.85b87c10.png",
+    "static/media/infoBar.css": "/test-taskr/static/media/searching.e34c764b.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.0e062563.js",
+    "static/js/runtime-main.ec643acd.js",
     "static/js/2.44d96eb3.chunk.js",
-    "static/css/main.513a33c5.chunk.css",
+    "static/css/main.a8a6cfca.chunk.css",
     "static/js/main.c8603609.chunk.js"
   ]
 }
