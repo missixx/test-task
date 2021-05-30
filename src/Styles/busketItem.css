@@ -1,6 +1,7 @@
-.busket-item-block {
+.busket-item {
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .busket-item__img {
@@ -8,6 +9,12 @@
    height: 75px;
    background-repeat: no-repeat;
    background-size: contain;
+}
+
+.busket-item-container{
+   height: 100px;
+   display: flex;
+   border: 1px solid black;
 }
 
 .busket-item__info {
@@ -47,4 +54,30 @@
 
 .busket-item__result{
    width: 120px;
+}
+
+.busket-item__delete-block{
+   width: 20px;
+   height: 20px;
+   background-color: red;
+   display: block;
+   color: white;
+   text-align: center;
+   cursor: pointer;
+}
+
+
+.busket-item-container {
+   height: 46px;
+   width: 662px;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   border: 1px solid black;
+   /* top: 50%; */
+   /* bottom: 0; */
+   /* right: 0; */
+   /* margin: 0 auto; */
+   /* transform: translateY(-50%); */
+   /* position: absolute; */
 }

@@ -19,12 +19,8 @@ function FilterBar(props) {
    return (
       <div className='filters-bar'>
          <div className='filters-bar__inner'>
-            <div className='shopAll'>
-               <div className='shopAll__name'>Shop All</div>
-            </div>
-            <div className='items'>
-               <div className='items__name'>100 items</div>
-            </div>
+               <div className='shopAll'>Shop All</div>
+               <div className='items'>100 items</div>
             <div className='filters'>
                <div className='filters__category'>
                   <div className='filters__name'>Categories:</div>
@@ -38,7 +34,7 @@ function FilterBar(props) {
                      </select>
                   </form>
                </div>
-               <div className='filters__sortBy'>
+               <div className='filters__category'>
                   <div className='filters__name'>Sort by:</div>
                   <form>
                      <select className='filters__button' ref={selectSortRef} onChange={handleChangeSelectSort}>

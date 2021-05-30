@@ -10,30 +10,15 @@
 
 .filters-bar__inner {
    display: flex;
+   align-items: center;
+   justify-content: space-between;
 }
+
 
 .shopAll {
-   position: relative;
-   width: 187px;
-}
-
-.shopAll__name {
-   position: absolute;
-   top: 50%;
-   margin-top: -0.625em;
    font-size: 30px;
 }
 
-.items {
-   position: relative;
-   width: 157px;
-}
-
-.items__name {
-   position: absolute;
-   top: 50%;
-   margin-top: -0.625em;
-}
 
 .filters {
    display: flex;
@@ -43,26 +28,14 @@
 }
 
 .filters__category {
-   position: relative;
    display: flex;
-   justify-content: flex-end;
-   width: 190px;
-   
-}
-
-.filters__sortBy {
-   position: relative;
-   display: flex;
-   justify-content: flex-end;
+   justify-content: space-between;
+   align-items: center;
    width: 190px;
 }
 
 .filters__name {
    width: 70px;
-   position: absolute;
-   top: 50%;
-   margin-top: -0.625em;
-   left: 0;
 }
 
 .filters__button {
