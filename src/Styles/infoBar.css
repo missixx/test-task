@@ -10,29 +10,37 @@
 
 .infoBar__inner {
    display: flex;
+   justify-content: space-between;
 }
 
-.logo {
+.logo-block{
    width: 300px;
 }
 
-.logo__img {
+.logo {
    width: 111px;
    height: 24px;
    background-image: url("../Img/logo.png");
+   background-repeat: no-repeat;
+  
+}
+
+.logo__img {
+
 }
 
 .info {
    width: 265px;
    display: flex;
    justify-content: space-between;
+   align-items: center;
 }
 
 .info__item {
 }
 
 .info__name {
-   padding-top: 5px;
+
 }
 
 .info__name a {
@@ -76,11 +84,12 @@
 
 .login {
    width: 70px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
 }
 
 .login__btn {
-   text-align: center;
-   padding-top: 5px;
 }
 
 .busket {

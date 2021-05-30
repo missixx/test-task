@@ -34,15 +34,20 @@
    display: flex;
    justify-content: space-between;
    cursor: pointer;
+   align-items: center;
 }
 
 .busket-item__minus{
-  
+  width: 10px;
    }
+
+.busket-item__minus:active{
+
+    }
 
 
 .busket-item__plus{
-
+   width: 10px;
 }
 
 .busket-item__count{

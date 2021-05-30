@@ -9,6 +9,18 @@ function Item(props) {
       props.onChangingCheckedStatus(props.item.id)
    }
 
+   const buyBtnNotChecked = () => {
+      return (
+         <button className='buy-btn' onClick={handleAddToBusket}>SHOP ${props.item.price}</button>
+      )
+   }
+
+   const buyBtnChecked = () => {
+      return (
+         <button className='buy-btn--checked' onClick={handleAddToBusket}>Added to busket</button>
+      )
+   }
+
    return (
       <div className='item'>
          <div className='item__img' style={{ backgroundImage: `url(${props.item.img})` }}></div>
@@ -16,8 +28,7 @@ function Item(props) {
             <div className='item-name' >{props.item.name} </div>
             <div className='item-description'>{props.item.description}</div>
          </div>
-         <button className={props.item.checked ? 'buy-btn--checked' : 'buy-btn'} onClick={handleAddToBusket}>SHOP ${props.item.price}
-         </button>
+         {props.item.checked ? buyBtnChecked() : buyBtnNotChecked()}
       </div >
    )
 }

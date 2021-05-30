@@ -15,8 +15,8 @@ function InfoBar(props) {
    return (
       <div className='infoBar'>
          <div className='infoBar__inner'>
-            <div className='logo'>
-               <Link to='/'><div className='logo__img'></div></Link>
+            <div className='logo-block'>
+               <Link to='/'><div className='logo'></div></Link>
             </div>
             <div className='info'>
                <div className='info__item'>
