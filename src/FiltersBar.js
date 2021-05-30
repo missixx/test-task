@@ -19,13 +19,16 @@ function FilterBar(props) {
    return (
       <div className='filters-bar'>
          <div className='filters-bar__inner'>
-               <div className='shopAll'>Shop All</div>
-               <div className='items'>100 items</div>
+            <div className='shopAll'>Shop All</div>
+            <div className='items'>100 items</div>
             <div className='filters'>
                <div className='filters__category'>
                   <div className='filters__name'>Categories:</div>
                   <form>
-                     <select className='filters__button' ref={selectByCategoryRef} onChange={handleChangeSelectByCategory}>
+                     {/* //// здесь value={props.state.selectedByCategoryValue}  нужен для того чтобы сделать контролируемый селект,
+                     /// иначе когда выбрана какая то категория и ты переходишь например в корзину и возвращаешься обратно,
+                     /// элементы остаются отфильтрованными, но значение в селекте сбрасывается на All и даже при выборе All ничего не происходит */}
+                     <select value={props.state.selectedByCategoryValue} className='filters__button' ref={selectByCategoryRef} onChange={handleChangeSelectByCategory}>
                         <option value=''> All</option>
                         <option value='Creams'>Creams</option>
                         <option value='Sprays'>Sprays</option>
