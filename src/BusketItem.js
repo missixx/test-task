@@ -3,17 +3,17 @@ import './Styles/busketItem.css'
 
 function BusketItem(props) {
 
-   const handleAddToBusket = () => {
-      props.onDelFromBusket(props.item)
-      props.onChangingCheckedStatus(props.item.id)
-   }
-
+ 
    const handleItemCountIncrem = () => {
       props.onItemCountIncrem(props.item)
    }
 
    const handleItemCountDecrem = () => {
       props.onItemCountDecrem(props.item)
+   }
+
+   const handleOpenModal = () =>{
+      props.onOpenModal(props.item)
    }
 
 
@@ -38,7 +38,7 @@ function BusketItem(props) {
                <div className='busket-item__result'>
                   <span>amount: {props.item.itemsCount * props.item.price}$</span>
                </div>
-               <div className='busket-item__delete-block' onClick={handleAddToBusket}>X
+               <div className='busket-item__delete-block' onClick={handleOpenModal}>X
                {/* <span  className='busket-item__delete-btn'>X</span> */}
                </div>
          </div>
@@ -48,8 +48,7 @@ function BusketItem(props) {
 }
 
 export default connect(state => ({}), dispatch => ({
-   onDelFromBusket: (item) => dispatch({ type: 'DELETE_FROM_BUSKET', payload: { item: item } }),
-   onChangingCheckedStatus: (id) => dispatch({ type: 'CHANGE_CHECKED_STATUS', payload: { id: id } }),
+   onOpenModal: (item) => dispatch({ type: 'OPEN_MODAL', payload: {item: item} }),
    onItemCountIncrem: (item) => dispatch({ type: 'ITEM_COUNT_INCREMENT', payload: { item: item } }),
    onItemCountDecrem: (item) => dispatch({ type: 'ITEM_COUNT_DECREMENT', payload: { item: item } }),
 
